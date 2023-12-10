@@ -1,0 +1,67 @@
+.room {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #202124;
+}
+
+.room-video-wrapper {
+  // height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  video {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+}
+
+.room-clients {
+  gap: 10px;
+  flex-grow: 1;
+  // overflow: auto;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.room-footer {
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+  background-color: #202124;
+}
+
+.video-turned-off-icon {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.video-turned-icon {
+  position: absolute;
+  top: 55%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.end-call-icon {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
